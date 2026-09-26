@@ -6,7 +6,7 @@ router = APIRouter(
     tags=["Secretaría y Horarios"]
 )
 
-# Horarios
+# Horario
 
 @router.get("/horarios")
 async def obtener_horarios():
@@ -47,5 +47,3 @@ async def obtener_aulas():
 
 async def obtener_docentes():
     return await secretaria.obtener_docentes()
-
-
